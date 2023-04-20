@@ -2,9 +2,17 @@ let calculator = {
     sum() {
       return this.a + this.b;
     },
+
+    sub() {
+      return this.a - this.b;
+    },
   
     mul() {
       return this.a * this.b;
+    },
+
+    div() {
+      return this.a / this.b;
     },
   
     read() {
@@ -15,4 +23,6 @@ let calculator = {
   
   calculator.read();
   alert( calculator.sum() );
+  alert( calculator.sub() );
   alert( calculator.mul() );
+  alert( calculator.div() );

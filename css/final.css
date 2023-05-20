@@ -1,0 +1,152 @@
+header, footer{
+    background-color: rgb(28, 63, 62);
+    text-align: center;
+    color:rgb(236, 232, 241);
+    padding: 20px;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
+}
+
+
+#banner{
+    background-color: rgb(5, 63, 68);
+    padding:10px;
+    text-align: center;
+    position: relative;
+    color:rgb(49, 247, 247)
+}
+
+.bannershow{
+    display:block;
+}
+
+.bannerhidden{
+    display: none;
+}
+
+
+.title{
+    color: white;
+    margin: auto;
+    grid-column: 2/3;
+}
+
+
+nav {
+	margin: 0 auto;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+    color:aliceblue;
+}
+
+#menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: rgb(29, 115, 136);
+
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive #menu::before {
+	content: "X";
+}
+
+fieldset{
+    text-align: center;
+    margin: auto;
+    background-color: rgb(46, 42, 46);
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	margin: auto;
+    padding: auto;
+    align-items: center;
+    background: radial-gradient(rgba(172, 231, 231, 0.65), rgba(4, 60, 65, 0.95));
+}
+
+
+
+h1 {
+    width: 100%;
+	margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+h2{
+    width:fit-content;
+    border-bottom: 0.5rem solid #022832;
+    border-radius: 20% 0% 20% 0%;
+}
+
+a{
+	margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+	width: 100%;
+	margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 80px;
+}
+
+@media only screen and (min-width: 1280px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .layout nav{
+        grid-column: 3/4;
+        margin:auto;
+    }
+
+}

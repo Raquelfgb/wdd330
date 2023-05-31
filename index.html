@@ -8,7 +8,7 @@
     <title>Low-Carb Recipes</title>
     <meta name="description" content="Final project for WDD330 spring 2023">
     <meta name="author" content="Raquel de Freitas Greco Bueno">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/final.css">
     </head>
@@ -16,7 +16,7 @@
     <div id="banner">Subscribe to recieve new recipes every week!</div>
     <header>
         <div class="title">
-            <h1>Low-carb Recipes</h1>
+            <h1>Low-Carb Recipes</h1>
         </div>
         <fieldset>
             <span id="date"></span>
@@ -24,26 +24,29 @@
     </header>
     <main>
         <h2 class="titulo">Low-Carb Recipes</h2>
-        <div class="cards"></div>
-        <div class="search">
-            <ul class="list">
-                <span class="closeSpan"></span>
-            </ul>
-            
-            <label for="search">Search for a low-carb recipe with an specifc ingredient here</label>
-            <input type="text" id="input" class="input" name="input" placeholder="enter an ingredient">
-            <button type="submit" id="btn" class="btn">Search</button>
+        <div class="cards">
+            <div class="search">
+                <ul class="list">
+                    <span class="closeSpan"></span>
+                </ul>
+                
+                <label for="input">Search for a low-carb recipe with an specifc ingredient here</label>
+                <input type="text" id="input" class="input" name="input" placeholder="enter an ingredient">
+                <button type="submit" id="btn" class="btn">Search</button>
+            </div>
+            <div id="result"></div>
         </div>
+        
 
         
     </main>
+    <footer>
+        <div>
+            &copy;<span id="copyrightyear"></span> Low-carb Recipes <span id="name"> Raquel de Freitas Greco Bueno </span>WDD 330 Project <br> 
+        </div>
+    </footer>
+<script type="module" src="js/final.js"></script>
 
 </body>
-<footer>
-    <div>
-        &copy;<span id="copyrightyear"></span> Low-carb Recipes <span id="name"> Raquel de Freitas Greco Bueno </span>WDD 330 Project <br> Last Modified: <span id="lastmodified"></span>
-    </div>
-</footer>
 
-<script src="js/final.js"></script>
 </html>

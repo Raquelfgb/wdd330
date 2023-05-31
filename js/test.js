@@ -192,3 +192,64 @@ function getMeal(recipe){
 
     document.querySelector('div.cards').appendChild(card);
 }
+
+
+
+
+
+
+const displayMeal = (meals) => {
+	const cards = document.querySelector("div.cards");
+	cards.innerHTML = "";
+
+	meals.forEach((recipe) => {
+		let card = document.createElement("section");
+		let box = document.createElement("div");
+		box.classList.add("box");
+		let name = document.createElement('h2');
+		let photo = document.createElement('img');
+		let tags = document.createElement('h3');
+		let description = document.createElement('p');
+		let prepareTime = document.createElement('h3');
+		let cookTime = document.createElement('h3');
+		let ingredients = document.createElement('h3');
+		let steps = document.createElement('h3');
+		let servings = document.createElement('h3');
+		let servingSize = document.createElement('h3');
+		let nutrients = document.createElement('h3');
+
+		name.textContent = (`${recipe.name}`);
+		description.textContent = (`${recipe.description}`);
+		tags.textContent = (`${recipe.tag}`);
+		prepareTime.textContent = (`${recipe.prepareTime}`);
+		cookTime.textContent = (`${recipe.cookTime}`);
+		ingredients.textContent = (`${recipe.ingredients}`);
+		steps.textContent = (`${recipe.steps}`);
+		servings.textContent = (`${recipe.servings}`);
+		servingSize.textContent = (`${recipe.servingSize}`);
+		nutrients.textContent = (`${recipe.nutrients}`);
+    
+
+		photo.setAttribute('src', recipe.image);
+		photo.setAttribute('alt', (`Recipe of ${recipe.name}`));
+		photo.setAttribute('loading', 'lazy');
+
+		box.appendChild(prepareTime);
+		box.appendChild(cookTime);
+		box.appendChild(tags);
+		box.appendChild(ingredients);
+		box.appendChild(description);
+		box.appendChild(steps);
+		box.appendChild(servings);
+		box.appendChild(servingSize);
+		box.appendChild(nutrients);
+
+		card.appendChild(name);
+		card.appendChild(photo);
+		card.appendChild(box);
+		
+
+		document.querySelector('div.cards').appendChild(card);
+	});
+};
+

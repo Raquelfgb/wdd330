@@ -56,8 +56,8 @@ let input = document.getElementById('input').value;
 //API
 let resultElement = document.getElementById('result');
 let researchBtn = document.getElementById('btn');
-let url = 'https://low-carb-recipes.p.rapidapi.com/search?name=cake&tags=keto%3Bdairy-free&includeIngredients=egg%3Bbutter&excludeIngredients=cinnamon&maxPrepareTime=10&maxCookTime=20&maxCalories=500&maxNetCarbs=5&maxSugar=3&maxAddedSugar=0&limit=10';
-const recipeElement = document.querySelector('.cards');
+let url = "https://low-carb-recipes.p.rapidapi.com/search?name=cake&tags=keto%3Bdairy-free&includeIngredients=egg%3Bbutter&excludeIngredients=cinnamon&maxPrepareTime=10&maxCookTime=20&maxCalories=500&maxNetCarbs=5&maxSugar=3&maxAddedSugar=0&limit=10";
+
 const meal = document.getElementById('meal');
 const details = document.querySelector('.detail');
 const close = document.getElementById('close');
@@ -84,8 +84,9 @@ try {
 }
 
 
+
 function getMeal(recipes){
-    recipes.forEach(recipe => {
+    recipes.forEach((recipe) => {
 		let card = document.createElement("section");
 		let name = document.createElement('h2');
 		let photo = document.createElement('img');
@@ -128,6 +129,10 @@ function getMeal(recipes){
 	card.appendChild(servingSize);
 	card.appendChild(nutrients);
 
-    document.querySelector('div.cards').appendChild(card);})
+    document.querySelector('div.cards').appendChild(card);
+})
 }
+getMeal();
 //apiResponse();
+
+

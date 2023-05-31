@@ -36,50 +36,6 @@ footer{
 }
 
 
-nav {
-	margin: 0 auto;
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.navigation {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 1rem;
-	text-align: left;
-	text-decoration: none;
-    color:aliceblue;
-}
-
-#menu::before {
-	content: "≡";
-	font-size: 2rem;
-}
-
-.navigation a:hover, navigation a:active {
-	color: rgb(29, 115, 136);
-
-}
-
-
-.responsive li {
-	display: block;
-}
-
-.responsive #menu::before {
-	content: "X";
-}
-
 fieldset{
     text-align: center;
     margin: auto;
@@ -112,13 +68,8 @@ h2{
     border-radius: 20% 0% 20% 0%;
 }
 
-a{
-	margin: auto;
-    padding: 10px;
-    text-align: center;
-}
 
-p{
+h3, p{
 	width: 100%;
 	margin: auto;
     padding: auto;
@@ -130,23 +81,6 @@ p{
 }
 
 @media only screen and (min-width: 1280px) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; 
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-
-    .layout nav{
-        grid-column: 3/4;
-        margin:auto;
-    }
+	
 
 }

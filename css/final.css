@@ -54,6 +54,26 @@ main{
 }
 
 
+section {
+	margin: auto;
+	padding: auto;
+	border: 5px solid  rgb(28, 63, 62);
+	background-color: rgba(63, 130, 130, 0.65);
+	color: #fff;
+	display: flex;
+    width: 80%;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+
+section img {
+	width: 240px;
+	height: auto;
+	border: 1px solid rgb(28, 63, 62);
+	box-shadow: 0 0 20px rgb(44, 143, 140);
+}
 
 h1 {
     width: 100%;
@@ -70,8 +90,8 @@ h2{
 
 
 h3, p{
-	width: 100%;
-	margin: auto;
+	width: 90%;
+	margin:10px;
     padding: auto;
     text-align: center;
 }

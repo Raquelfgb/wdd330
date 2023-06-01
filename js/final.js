@@ -115,8 +115,8 @@ function getMeal(recipes){
 		name.textContent = recipe.name;
 		description.textContent = (`DESCRIPTION: ${recipe.description}`);
 		tags.textContent = recipe.tag;
-		prepareTime.textContent = (`PREPARE TIME: ${recipe.prepareTime}`);
-		cookTime.textContent = (`COOK TIME: ${recipe.cookTime}`);
+		prepareTime.textContent = (`PREPARE TIME IN MINUTES: ${recipe.prepareTime}`);
+		cookTime.textContent = (`COOK TIME IN MINUTES: ${recipe.cookTime}`);
 		ingredients.textContent = (`INGREDIENTS: ${recipe.ingredients}`);
 		steps.textContent = (`STEPS: ${recipe.steps}`);
 		servings.textContent = (`SERVINGS: ${recipe.servings}`);
